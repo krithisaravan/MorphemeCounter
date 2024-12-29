@@ -3,7 +3,7 @@ import pickle
 
 
 corpus = []
-with open('mc.txt', 'r') as file: #mc.txt is a preprocessed corpus containing words, bigrams, and trigrams
+with open('mc.txt', 'r') as file: # mc.txt is a preprocessed corpus containing words, bigrams, and trigrams
     for line in file:
         word = line.strip() # each word/bigram/trigram is on a new line
         corpus.append((1.0, word))
